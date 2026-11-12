@@ -8,7 +8,7 @@ public class TestPelicula {
         pelicula.setTitulo("Manolos");
         pelicula.setDirector("Manolo");
         try {
-            pelicula.setDuracionMinutos(0);
+            pelicula.setDuracionMinutos(-1);
         }catch (IllegalArgumentException e){
             System.out.println("Error: "+e.getMessage());
         }
